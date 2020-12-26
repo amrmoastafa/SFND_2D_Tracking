@@ -21,7 +21,10 @@ using namespace std;
 /* MAIN PROGRAM */
 int main(int argc, const char *argv[])
 {
-
+    cout << "This program has " << argc << " arguments:" << endl;
+    for (int i = 0; i < argc; ++i) {
+        cout << argv[i] << endl;
+    }
     /* INIT VARIABLES AND DATA STRUCTURES */
 
     // data location
@@ -34,11 +37,15 @@ int main(int argc, const char *argv[])
     int imgStartIndex = 0; // first file index to load (assumes Lidar and camera names have identical naming convention)
     int imgEndIndex = 9;   // last file index to load
     int imgFillWidth = 4;  // no. of digits which make up the file index (e.g. img-0001.png)
-
+    vector <int> total_vehicle_Keypoints;
+    vector <int>total_keypoints;
+    vector <float> average_size_detectedKP;
+    vector <int> total_matched_keypoints;
+    double Average_Time = 0.0;
     // misc
     int dataBufferSize = 2;       // no. of images which are held in memory (ring buffer) at the same time
     vector<DataFrame> dataBuffer; // list of data frames which are held in memory at the same time
-    bool bVis = false;            // visualize results
+    bool bVis = true;            // visualize results
 
     /* MAIN LOOP OVER ALL IMAGES */
 
@@ -58,12 +65,27 @@ int main(int argc, const char *argv[])
 
         //// STUDENT ASSIGNMENT
         //// TASK MP.1 -> replace the following code with ring buffer of size dataBufferSize
-
-        // push image into data frame buffer
         DataFrame frame;
         frame.cameraImg = imgGray;
-        dataBuffer.push_back(frame);
+        /* Skeleton :
+            if ( data buffer is full )
+            {
+                remove the oldest data frame , then continue to adding a new frame
+            }else
+            {
+                just add a new frame
+            }
+        */
 
+        if(dataBuffer.size() > dataBufferSize)
+        {
+            dataBuffer.erase(dataBuffer.begin());
+            dataBuffer.push_back(frame);
+        }
+        else
+        {
+            dataBuffer.push_back(frame);
+        }
         //// EOF STUDENT ASSIGNMENT
         cout << "#1 : LOAD IMAGE INTO BUFFER done" << endl;
 
@@ -71,7 +93,7 @@ int main(int argc, const char *argv[])
 
         // extract 2D keypoints from current image
         vector<cv::KeyPoint> keypoints; // create empty feature list for current image
-        string detectorType = "SHITOMASI";
+        string detectorType = argv[1];
 
         //// STUDENT ASSIGNMENT
         //// TASK MP.2 -> add the following keypoint detectors in file matching2D.cpp and enable string-based selection based on detectorType
@@ -79,12 +101,19 @@ int main(int argc, const char *argv[])
 
         if (detectorType.compare("SHITOMASI") == 0)
         {
-            detKeypointsShiTomasi(keypoints, imgGray, false);
+            detKeypointsShiTomasi(keypoints, imgGray, false,&Average_Time);
         }
-        else
+        else if (detectorType.compare("HARRIS") == 0)
         {
-            //...
+            detKeypointsHarris(keypoints, imgGray, false,&Average_Time);
         }
+        else if (detectorType.compare("BRISK") == 0 || detectorType.compare("SIFT") == 0 ||
+                   detectorType.compare("AKAZE") == 0 || detectorType.compare("ORB") == 0 ||
+                   detectorType.compare("FAST") == 0)
+        {
+            detKeypointsModern(keypoints, imgGray, detectorType ,false,&Average_Time);
+        }
+        
         //// EOF STUDENT ASSIGNMENT
 
         //// STUDENT ASSIGNMENT
@@ -93,18 +122,35 @@ int main(int argc, const char *argv[])
         // only keep keypoints on the preceding vehicle
         bool bFocusOnVehicle = true;
         cv::Rect vehicleRect(535, 180, 180, 150);
+        std::vector<cv::KeyPoint> vehicle_Keypoints;
         if (bFocusOnVehicle)
         {
-            // ...
+            // Remove keypoints outside of the vehicleRect
+            for (auto it=keypoints.begin(); it != keypoints.end(); it++ ) {
+              if (vehicleRect.contains(it->pt)) {
+                //keypoints.erase(it);
+                vehicle_Keypoints.push_back(*it);
+              }
+            }
         }
 
+        //Neighborhood distribution calculation
+        double average_size = 0;
+        for (auto kp : vehicle_Keypoints) {
+            average_size += kp.size;
+        }
+        average_size /= vehicle_Keypoints.size();
+        total_keypoints.push_back(keypoints.size());
+        total_vehicle_Keypoints.push_back(vehicle_Keypoints.size());
+        average_size_detectedKP.push_back(average_size);
+        
         //// EOF STUDENT ASSIGNMENT
 
         // optional : limit number of keypoints (helpful for debugging and learning)
         bool bLimitKpts = false;
         if (bLimitKpts)
         {
-            int maxKeypoints = 50;
+            int maxKeypoints = 20;
 
             if (detectorType.compare("SHITOMASI") == 0)
             { // there is no response info, so keep the first 50 as they are sorted in descending quality order
@@ -125,8 +171,8 @@ int main(int argc, const char *argv[])
         //// -> BRIEF, ORB, FREAK, AKAZE, SIFT
 
         cv::Mat descriptors;
-        string descriptorType = "BRISK"; // BRIEF, ORB, FREAK, AKAZE, SIFT
-        descKeypoints((dataBuffer.end() - 1)->keypoints, (dataBuffer.end() - 1)->cameraImg, descriptors, descriptorType);
+        string descriptorType = argv[2]; // BRIEF, ORB, FREAK, AKAZE, SIFT
+        descKeypoints((dataBuffer.end() - 1)->keypoints, (dataBuffer.end() - 1)->cameraImg, descriptors, descriptorType,&Average_Time);
         //// EOF STUDENT ASSIGNMENT
 
         // push descriptors for current frame to end of data buffer
@@ -141,8 +187,8 @@ int main(int argc, const char *argv[])
 
             vector<cv::DMatch> matches;
             string matcherType = "MAT_BF";        // MAT_BF, MAT_FLANN
-            string descriptorType = "DES_BINARY"; // DES_BINARY, DES_HOG
-            string selectorType = "SEL_NN";       // SEL_NN, SEL_KNN
+            string descriptorType = "DES_HOG"; // DES_BINARY, DES_HOG
+            string selectorType = "SEL_KNN";       // SEL_NN, SEL_KNN
 
             //// STUDENT ASSIGNMENT
             //// TASK MP.5 -> add FLANN matching in file matching2D.cpp
@@ -151,6 +197,7 @@ int main(int argc, const char *argv[])
             matchDescriptors((dataBuffer.end() - 2)->keypoints, (dataBuffer.end() - 1)->keypoints,
                              (dataBuffer.end() - 2)->descriptors, (dataBuffer.end() - 1)->descriptors,
                              matches, descriptorType, matcherType, selectorType);
+            total_matched_keypoints.push_back(matches.size());
 
             //// EOF STUDENT ASSIGNMENT
 
@@ -174,12 +221,47 @@ int main(int argc, const char *argv[])
                 cv::namedWindow(windowName, 7);
                 cv::imshow(windowName, matchImg);
                 cout << "Press key to continue to next image" << endl;
-                cv::waitKey(0); // wait for key to be pressed
+                // cv::waitKey(0); // wait for key to be pressed
             }
             bVis = false;
         }
 
     } // eof loop over all images
+    cout << "DATA BUFFER ORIGINAL SIZE : "<<dataBuffer.size();
+    
+
+                        /* Run Task 7 script * Uncomment this part    */
+
+    // std::ofstream Task7;
+    // Task7.open("../TASK MP.7.txt", std::ios_base::app); // append instead of overwrite
+    // Task7 <<"For Detector \""<<argv[1]<<"\""<<" number of keypoints on vehicle detected :\n";
+    // for(int i = 0;i < total_vehicle_Keypoints.size();i++)
+    // {
+    //     Task7 << "\t *)In Image("<<i<<") , "<<total_keypoints[i]<<" Keypoints Were Detected , "\
+    //     << total_vehicle_Keypoints[i] <<" Were On The Vehicle , Average size of neigbourhood : "<< average_size_detectedKP[i]<<".\n";
+    // }
+
+
+
+                        /* Run task 8 script & uncomment this part */
+
+    // std::ofstream Task8;
+    // Task8.open("../TASK MP.8.txt", std::ios_base::app); // append instead of overwrite
+    // Task8 <<"For Detector \""<<argv[1]<<"\""<<" & Descriptor \""<<argv[2]<<"\" combination : \n";
+    // for(int i = 0;i < total_matched_keypoints.size();i++)
+    // {
+    //     Task8 << "\t *)In Image("<<i<<") , number of matched keypoints : "<< total_matched_keypoints[i]<<"\n";
+    // }
+
+
+
+                        /* Run task 9 script & uncomment this part */
+    // Average_Time *=100;
+    // std::ofstream Task9;
+    // Task9.open("../TASK MP.9.csv", std::ios_base::app);
+    // Task9 << argv[1]<<"/" << argv[2]<<"," << Average_Time <<"\n";
+
+    // cout <<"Value for Average_Time :"<<Average_Time;
 
     return 0;
 }

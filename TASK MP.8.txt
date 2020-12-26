@@ -1,0 +1,280 @@
+For Detector "SHITOMASI" & Descriptor "BRISK" combination : 
+	 *)In Image(0) , number of matched keypoints : 752
+	 *)In Image(1) , number of matched keypoints : 731
+	 *)In Image(2) , number of matched keypoints : 708
+	 *)In Image(3) , number of matched keypoints : 697
+	 *)In Image(4) , number of matched keypoints : 703
+	 *)In Image(5) , number of matched keypoints : 685
+	 *)In Image(6) , number of matched keypoints : 715
+	 *)In Image(7) , number of matched keypoints : 753
+	 *)In Image(8) , number of matched keypoints : 715
+For Detector "SHITOMASI" & Descriptor "BRIEF" combination : 
+	 *)In Image(0) , number of matched keypoints : 1003
+	 *)In Image(1) , number of matched keypoints : 981
+	 *)In Image(2) , number of matched keypoints : 992
+	 *)In Image(3) , number of matched keypoints : 987
+	 *)In Image(4) , number of matched keypoints : 931
+	 *)In Image(5) , number of matched keypoints : 947
+	 *)In Image(6) , number of matched keypoints : 973
+	 *)In Image(7) , number of matched keypoints : 1003
+	 *)In Image(8) , number of matched keypoints : 971
+For Detector "SHITOMASI" & Descriptor "ORB" combination : 
+	 *)In Image(0) , number of matched keypoints : 897
+	 *)In Image(1) , number of matched keypoints : 885
+	 *)In Image(2) , number of matched keypoints : 909
+	 *)In Image(3) , number of matched keypoints : 908
+	 *)In Image(4) , number of matched keypoints : 890
+	 *)In Image(5) , number of matched keypoints : 870
+	 *)In Image(6) , number of matched keypoints : 873
+	 *)In Image(7) , number of matched keypoints : 905
+	 *)In Image(8) , number of matched keypoints : 882
+For Detector "SHITOMASI" & Descriptor "FREAK" combination : 
+	 *)In Image(0) , number of matched keypoints : 724
+	 *)In Image(1) , number of matched keypoints : 719
+	 *)In Image(2) , number of matched keypoints : 751
+	 *)In Image(3) , number of matched keypoints : 713
+	 *)In Image(4) , number of matched keypoints : 702
+	 *)In Image(5) , number of matched keypoints : 714
+	 *)In Image(6) , number of matched keypoints : 699
+	 *)In Image(7) , number of matched keypoints : 720
+	 *)In Image(8) , number of matched keypoints : 685
+For Detector "HARRIS" & Descriptor "BRISK" combination : 
+	 *)In Image(0) , number of matched keypoints : 65
+	 *)In Image(1) , number of matched keypoints : 52
+	 *)In Image(2) , number of matched keypoints : 67
+	 *)In Image(3) , number of matched keypoints : 75
+	 *)In Image(4) , number of matched keypoints : 106
+	 *)In Image(5) , number of matched keypoints : 88
+	 *)In Image(6) , number of matched keypoints : 62
+	 *)In Image(7) , number of matched keypoints : 119
+	 *)In Image(8) , number of matched keypoints : 121
+For Detector "HARRIS" & Descriptor "BRIEF" combination : 
+	 *)In Image(0) , number of matched keypoints : 82
+	 *)In Image(1) , number of matched keypoints : 77
+	 *)In Image(2) , number of matched keypoints : 85
+	 *)In Image(3) , number of matched keypoints : 93
+	 *)In Image(4) , number of matched keypoints : 134
+	 *)In Image(5) , number of matched keypoints : 133
+	 *)In Image(6) , number of matched keypoints : 67
+	 *)In Image(7) , number of matched keypoints : 150
+	 *)In Image(8) , number of matched keypoints : 143
+For Detector "HARRIS" & Descriptor "ORB" combination : 
+	 *)In Image(0) , number of matched keypoints : 73
+	 *)In Image(1) , number of matched keypoints : 67
+	 *)In Image(2) , number of matched keypoints : 79
+	 *)In Image(3) , number of matched keypoints : 89
+	 *)In Image(4) , number of matched keypoints : 126
+	 *)In Image(5) , number of matched keypoints : 112
+	 *)In Image(6) , number of matched keypoints : 66
+	 *)In Image(7) , number of matched keypoints : 144
+	 *)In Image(8) , number of matched keypoints : 132
+For Detector "HARRIS" & Descriptor "FREAK" combination : 
+	 *)In Image(0) , number of matched keypoints : 61
+	 *)In Image(1) , number of matched keypoints : 55
+	 *)In Image(2) , number of matched keypoints : 64
+	 *)In Image(3) , number of matched keypoints : 77
+	 *)In Image(4) , number of matched keypoints : 106
+	 *)In Image(5) , number of matched keypoints : 93
+	 *)In Image(6) , number of matched keypoints : 56
+	 *)In Image(7) , number of matched keypoints : 120
+	 *)In Image(8) , number of matched keypoints : 116
+For Detector "FAST" & Descriptor "BRISK" combination : 
+	 *)In Image(0) , number of matched keypoints : 2241
+	 *)In Image(1) , number of matched keypoints : 2231
+	 *)In Image(2) , number of matched keypoints : 2194
+	 *)In Image(3) , number of matched keypoints : 2167
+	 *)In Image(4) , number of matched keypoints : 2218
+	 *)In Image(5) , number of matched keypoints : 2156
+	 *)In Image(6) , number of matched keypoints : 2066
+	 *)In Image(7) , number of matched keypoints : 2199
+	 *)In Image(8) , number of matched keypoints : 2182
+For Detector "FAST" & Descriptor "BRIEF" combination : 
+	 *)In Image(0) , number of matched keypoints : 3041
+	 *)In Image(1) , number of matched keypoints : 2994
+	 *)In Image(2) , number of matched keypoints : 3037
+	 *)In Image(3) , number of matched keypoints : 3014
+	 *)In Image(4) , number of matched keypoints : 2941
+	 *)In Image(5) , number of matched keypoints : 2930
+	 *)In Image(6) , number of matched keypoints : 2899
+	 *)In Image(7) , number of matched keypoints : 2992
+	 *)In Image(8) , number of matched keypoints : 2980
+For Detector "FAST" & Descriptor "ORB" combination : 
+	 *)In Image(0) , number of matched keypoints : 2723
+	 *)In Image(1) , number of matched keypoints : 2741
+	 *)In Image(2) , number of matched keypoints : 2777
+	 *)In Image(3) , number of matched keypoints : 2742
+	 *)In Image(4) , number of matched keypoints : 2758
+	 *)In Image(5) , number of matched keypoints : 2688
+	 *)In Image(6) , number of matched keypoints : 2690
+	 *)In Image(7) , number of matched keypoints : 2761
+	 *)In Image(8) , number of matched keypoints : 2744
+For Detector "FAST" & Descriptor "FREAK" combination : 
+	 *)In Image(0) , number of matched keypoints : 2151
+	 *)In Image(1) , number of matched keypoints : 2154
+	 *)In Image(2) , number of matched keypoints : 2127
+	 *)In Image(3) , number of matched keypoints : 2150
+	 *)In Image(4) , number of matched keypoints : 2218
+	 *)In Image(5) , number of matched keypoints : 2135
+	 *)In Image(6) , number of matched keypoints : 2061
+	 *)In Image(7) , number of matched keypoints : 2201
+	 *)In Image(8) , number of matched keypoints : 2174
+For Detector "BRISK" & Descriptor "BRISK" combination : 
+	 *)In Image(0) , number of matched keypoints : 1494
+	 *)In Image(1) , number of matched keypoints : 1486
+	 *)In Image(2) , number of matched keypoints : 1477
+	 *)In Image(3) , number of matched keypoints : 1400
+	 *)In Image(4) , number of matched keypoints : 1451
+	 *)In Image(5) , number of matched keypoints : 1368
+	 *)In Image(6) , number of matched keypoints : 1400
+	 *)In Image(7) , number of matched keypoints : 1373
+	 *)In Image(8) , number of matched keypoints : 1385
+For Detector "BRISK" & Descriptor "BRIEF" combination : 
+	 *)In Image(0) , number of matched keypoints : 1689
+	 *)In Image(1) , number of matched keypoints : 1739
+	 *)In Image(2) , number of matched keypoints : 1746
+	 *)In Image(3) , number of matched keypoints : 1674
+	 *)In Image(4) , number of matched keypoints : 1666
+	 *)In Image(5) , number of matched keypoints : 1622
+	 *)In Image(6) , number of matched keypoints : 1660
+	 *)In Image(7) , number of matched keypoints : 1646
+	 *)In Image(8) , number of matched keypoints : 1601
+For Detector "BRISK" & Descriptor "ORB" combination : 
+	 *)In Image(0) , number of matched keypoints : 1435
+	 *)In Image(1) , number of matched keypoints : 1440
+	 *)In Image(2) , number of matched keypoints : 1417
+	 *)In Image(3) , number of matched keypoints : 1392
+	 *)In Image(4) , number of matched keypoints : 1417
+	 *)In Image(5) , number of matched keypoints : 1371
+	 *)In Image(6) , number of matched keypoints : 1357
+	 *)In Image(7) , number of matched keypoints : 1364
+	 *)In Image(8) , number of matched keypoints : 1346
+For Detector "BRISK" & Descriptor "FREAK" combination : 
+	 *)In Image(0) , number of matched keypoints : 1329
+	 *)In Image(1) , number of matched keypoints : 1353
+	 *)In Image(2) , number of matched keypoints : 1363
+	 *)In Image(3) , number of matched keypoints : 1299
+	 *)In Image(4) , number of matched keypoints : 1378
+	 *)In Image(5) , number of matched keypoints : 1323
+	 *)In Image(6) , number of matched keypoints : 1291
+	 *)In Image(7) , number of matched keypoints : 1306
+	 *)In Image(8) , number of matched keypoints : 1287
+For Detector "ORB" & Descriptor "BRISK" combination : 
+	 *)In Image(0) , number of matched keypoints : 296
+	 *)In Image(1) , number of matched keypoints : 298
+	 *)In Image(2) , number of matched keypoints : 309
+	 *)In Image(3) , number of matched keypoints : 299
+	 *)In Image(4) , number of matched keypoints : 313
+	 *)In Image(5) , number of matched keypoints : 310
+	 *)In Image(6) , number of matched keypoints : 306
+	 *)In Image(7) , number of matched keypoints : 315
+	 *)In Image(8) , number of matched keypoints : 313
+For Detector "ORB" & Descriptor "BRIEF" combination : 
+	 *)In Image(0) , number of matched keypoints : 240
+	 *)In Image(1) , number of matched keypoints : 245
+	 *)In Image(2) , number of matched keypoints : 239
+	 *)In Image(3) , number of matched keypoints : 250
+	 *)In Image(4) , number of matched keypoints : 239
+	 *)In Image(5) , number of matched keypoints : 246
+	 *)In Image(6) , number of matched keypoints : 259
+	 *)In Image(7) , number of matched keypoints : 251
+	 *)In Image(8) , number of matched keypoints : 246
+For Detector "ORB" & Descriptor "ORB" combination : 
+	 *)In Image(0) , number of matched keypoints : 351
+	 *)In Image(1) , number of matched keypoints : 335
+	 *)In Image(2) , number of matched keypoints : 340
+	 *)In Image(3) , number of matched keypoints : 328
+	 *)In Image(4) , number of matched keypoints : 329
+	 *)In Image(5) , number of matched keypoints : 342
+	 *)In Image(6) , number of matched keypoints : 341
+	 *)In Image(7) , number of matched keypoints : 336
+	 *)In Image(8) , number of matched keypoints : 319
+For Detector "ORB" & Descriptor "FREAK" combination : 
+	 *)In Image(0) , number of matched keypoints : 122
+	 *)In Image(1) , number of matched keypoints : 113
+	 *)In Image(2) , number of matched keypoints : 121
+	 *)In Image(3) , number of matched keypoints : 127
+	 *)In Image(4) , number of matched keypoints : 119
+	 *)In Image(5) , number of matched keypoints : 129
+	 *)In Image(6) , number of matched keypoints : 131
+	 *)In Image(7) , number of matched keypoints : 128
+	 *)In Image(8) , number of matched keypoints : 136
+For Detector "AKAZE" & Descriptor "BRISK" combination : 
+	 *)In Image(0) , number of matched keypoints : 898
+	 *)In Image(1) , number of matched keypoints : 886
+	 *)In Image(2) , number of matched keypoints : 898
+	 *)In Image(3) , number of matched keypoints : 907
+	 *)In Image(4) , number of matched keypoints : 905
+	 *)In Image(5) , number of matched keypoints : 941
+	 *)In Image(6) , number of matched keypoints : 940
+	 *)In Image(7) , number of matched keypoints : 945
+	 *)In Image(8) , number of matched keypoints : 930
+For Detector "AKAZE" & Descriptor "BRIEF" combination : 
+	 *)In Image(0) , number of matched keypoints : 949
+	 *)In Image(1) , number of matched keypoints : 968
+	 *)In Image(2) , number of matched keypoints : 985
+	 *)In Image(3) , number of matched keypoints : 988
+	 *)In Image(4) , number of matched keypoints : 979
+	 *)In Image(5) , number of matched keypoints : 1005
+	 *)In Image(6) , number of matched keypoints : 1011
+	 *)In Image(7) , number of matched keypoints : 1003
+	 *)In Image(8) , number of matched keypoints : 984
+For Detector "AKAZE" & Descriptor "ORB" combination : 
+	 *)In Image(0) , number of matched keypoints : 868
+	 *)In Image(1) , number of matched keypoints : 899
+	 *)In Image(2) , number of matched keypoints : 872
+	 *)In Image(3) , number of matched keypoints : 862
+	 *)In Image(4) , number of matched keypoints : 878
+	 *)In Image(5) , number of matched keypoints : 913
+	 *)In Image(6) , number of matched keypoints : 905
+	 *)In Image(7) , number of matched keypoints : 902
+	 *)In Image(8) , number of matched keypoints : 875
+For Detector "AKAZE" & Descriptor "FREAK" combination : 
+	 *)In Image(0) , number of matched keypoints : 839
+	 *)In Image(1) , number of matched keypoints : 855
+	 *)In Image(2) , number of matched keypoints : 848
+	 *)In Image(3) , number of matched keypoints : 846
+	 *)In Image(4) , number of matched keypoints : 872
+	 *)In Image(5) , number of matched keypoints : 870
+	 *)In Image(6) , number of matched keypoints : 876
+	 *)In Image(7) , number of matched keypoints : 934
+	 *)In Image(8) , number of matched keypoints : 904
+For Detector "AKAZE" & Descriptor "AKAZE" combination : 
+	 *)In Image(0) , number of matched keypoints : 1011
+	 *)In Image(1) , number of matched keypoints : 1025
+	 *)In Image(2) , number of matched keypoints : 1021
+	 *)In Image(3) , number of matched keypoints : 1027
+	 *)In Image(4) , number of matched keypoints : 1022
+	 *)In Image(5) , number of matched keypoints : 1039
+	 *)In Image(6) , number of matched keypoints : 1026
+	 *)In Image(7) , number of matched keypoints : 1043
+	 *)In Image(8) , number of matched keypoints : 999
+For Detector "SIFT" & Descriptor "BRISK" combination : 
+	 *)In Image(0) , number of matched keypoints : 564
+	 *)In Image(1) , number of matched keypoints : 562
+	 *)In Image(2) , number of matched keypoints : 563
+	 *)In Image(3) , number of matched keypoints : 532
+	 *)In Image(4) , number of matched keypoints : 543
+	 *)In Image(5) , number of matched keypoints : 546
+	 *)In Image(6) , number of matched keypoints : 555
+	 *)In Image(7) , number of matched keypoints : 532
+	 *)In Image(8) , number of matched keypoints : 564
+For Detector "SIFT" & Descriptor "BRIEF" combination : 
+	 *)In Image(0) , number of matched keypoints : 702
+	 *)In Image(1) , number of matched keypoints : 653
+	 *)In Image(2) , number of matched keypoints : 666
+	 *)In Image(3) , number of matched keypoints : 640
+	 *)In Image(4) , number of matched keypoints : 648
+	 *)In Image(5) , number of matched keypoints : 652
+	 *)In Image(6) , number of matched keypoints : 671
+	 *)In Image(7) , number of matched keypoints : 619
+	 *)In Image(8) , number of matched keypoints : 673
+For Detector "SIFT" & Descriptor "FREAK" combination : 
+	 *)In Image(0) , number of matched keypoints : 538
+	 *)In Image(1) , number of matched keypoints : 522
+	 *)In Image(2) , number of matched keypoints : 538
+	 *)In Image(3) , number of matched keypoints : 518
+	 *)In Image(4) , number of matched keypoints : 517
+	 *)In Image(5) , number of matched keypoints : 509
+	 *)In Image(6) , number of matched keypoints : 544
+	 *)In Image(7) , number of matched keypoints : 521
+	 *)In Image(8) , number of matched keypoints : 533

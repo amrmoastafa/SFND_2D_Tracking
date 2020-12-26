@@ -1,0 +1,77 @@
+For Detector "SHITOMASI" number of keypoints on vehicle detected :
+	 *)In Image(0) , 1370 Keypoints Were Detected , 125 Were On The Vehicle , Average size of neigbourhood : 4.
+	 *)In Image(1) , 1301 Keypoints Were Detected , 118 Were On The Vehicle , Average size of neigbourhood : 4.
+	 *)In Image(2) , 1361 Keypoints Were Detected , 123 Were On The Vehicle , Average size of neigbourhood : 4.
+	 *)In Image(3) , 1358 Keypoints Were Detected , 120 Were On The Vehicle , Average size of neigbourhood : 4.
+	 *)In Image(4) , 1333 Keypoints Were Detected , 120 Were On The Vehicle , Average size of neigbourhood : 4.
+	 *)In Image(5) , 1284 Keypoints Were Detected , 113 Were On The Vehicle , Average size of neigbourhood : 4.
+	 *)In Image(6) , 1322 Keypoints Were Detected , 114 Were On The Vehicle , Average size of neigbourhood : 4.
+	 *)In Image(7) , 1366 Keypoints Were Detected , 123 Were On The Vehicle , Average size of neigbourhood : 4.
+	 *)In Image(8) , 1389 Keypoints Were Detected , 111 Were On The Vehicle , Average size of neigbourhood : 4.
+	 *)In Image(9) , 1339 Keypoints Were Detected , 112 Were On The Vehicle , Average size of neigbourhood : 4.
+For Detector "HARRIS" number of keypoints on vehicle detected :
+	 *)In Image(0) , 115 Keypoints Were Detected , 17 Were On The Vehicle , Average size of neigbourhood : 6.
+	 *)In Image(1) , 98 Keypoints Were Detected , 14 Were On The Vehicle , Average size of neigbourhood : 6.
+	 *)In Image(2) , 113 Keypoints Were Detected , 18 Were On The Vehicle , Average size of neigbourhood : 6.
+	 *)In Image(3) , 121 Keypoints Were Detected , 21 Were On The Vehicle , Average size of neigbourhood : 6.
+	 *)In Image(4) , 160 Keypoints Were Detected , 26 Were On The Vehicle , Average size of neigbourhood : 6.
+	 *)In Image(5) , 383 Keypoints Were Detected , 43 Were On The Vehicle , Average size of neigbourhood : 6.
+	 *)In Image(6) , 85 Keypoints Were Detected , 18 Were On The Vehicle , Average size of neigbourhood : 6.
+	 *)In Image(7) , 210 Keypoints Were Detected , 31 Were On The Vehicle , Average size of neigbourhood : 6.
+	 *)In Image(8) , 171 Keypoints Were Detected , 26 Were On The Vehicle , Average size of neigbourhood : 6.
+	 *)In Image(9) , 281 Keypoints Were Detected , 34 Were On The Vehicle , Average size of neigbourhood : 6.
+For Detector "FAST" number of keypoints on vehicle detected :
+	 *)In Image(0) , 5063 Keypoints Were Detected , 419 Were On The Vehicle , Average size of neigbourhood : 7.
+	 *)In Image(1) , 4952 Keypoints Were Detected , 427 Were On The Vehicle , Average size of neigbourhood : 7.
+	 *)In Image(2) , 4863 Keypoints Were Detected , 404 Were On The Vehicle , Average size of neigbourhood : 7.
+	 *)In Image(3) , 4840 Keypoints Were Detected , 423 Were On The Vehicle , Average size of neigbourhood : 7.
+	 *)In Image(4) , 4856 Keypoints Were Detected , 386 Were On The Vehicle , Average size of neigbourhood : 7.
+	 *)In Image(5) , 4899 Keypoints Were Detected , 414 Were On The Vehicle , Average size of neigbourhood : 7.
+	 *)In Image(6) , 4870 Keypoints Were Detected , 418 Were On The Vehicle , Average size of neigbourhood : 7.
+	 *)In Image(7) , 4868 Keypoints Were Detected , 406 Were On The Vehicle , Average size of neigbourhood : 7.
+	 *)In Image(8) , 4996 Keypoints Were Detected , 396 Were On The Vehicle , Average size of neigbourhood : 7.
+	 *)In Image(9) , 4997 Keypoints Were Detected , 401 Were On The Vehicle , Average size of neigbourhood : 7.
+For Detector "BRISK" number of keypoints on vehicle detected :
+	 *)In Image(0) , 2757 Keypoints Were Detected , 264 Were On The Vehicle , Average size of neigbourhood : 21.5492.
+	 *)In Image(1) , 2777 Keypoints Were Detected , 282 Were On The Vehicle , Average size of neigbourhood : 21.7853.
+	 *)In Image(2) , 2741 Keypoints Were Detected , 282 Were On The Vehicle , Average size of neigbourhood : 21.6509.
+	 *)In Image(3) , 2735 Keypoints Were Detected , 277 Were On The Vehicle , Average size of neigbourhood : 20.3582.
+	 *)In Image(4) , 2757 Keypoints Were Detected , 297 Were On The Vehicle , Average size of neigbourhood : 22.5911.
+	 *)In Image(5) , 2695 Keypoints Were Detected , 279 Were On The Vehicle , Average size of neigbourhood : 22.9442.
+	 *)In Image(6) , 2715 Keypoints Were Detected , 289 Were On The Vehicle , Average size of neigbourhood : 21.8014.
+	 *)In Image(7) , 2628 Keypoints Were Detected , 272 Were On The Vehicle , Average size of neigbourhood : 22.1472.
+	 *)In Image(8) , 2639 Keypoints Were Detected , 266 Were On The Vehicle , Average size of neigbourhood : 22.5558.
+	 *)In Image(9) , 2672 Keypoints Were Detected , 254 Were On The Vehicle , Average size of neigbourhood : 22.0389.
+For Detector "ORB" number of keypoints on vehicle detected :
+	 *)In Image(0) , 500 Keypoints Were Detected , 92 Were On The Vehicle , Average size of neigbourhood : 57.0723.
+	 *)In Image(1) , 500 Keypoints Were Detected , 102 Were On The Vehicle , Average size of neigbourhood : 57.2273.
+	 *)In Image(2) , 500 Keypoints Were Detected , 106 Were On The Vehicle , Average size of neigbourhood : 56.4948.
+	 *)In Image(3) , 500 Keypoints Were Detected , 113 Were On The Vehicle , Average size of neigbourhood : 55.1436.
+	 *)In Image(4) , 500 Keypoints Were Detected , 109 Were On The Vehicle , Average size of neigbourhood : 56.7442.
+	 *)In Image(5) , 500 Keypoints Were Detected , 125 Were On The Vehicle , Average size of neigbourhood : 56.6367.
+	 *)In Image(6) , 500 Keypoints Were Detected , 130 Were On The Vehicle , Average size of neigbourhood : 56.7683.
+	 *)In Image(7) , 500 Keypoints Were Detected , 129 Were On The Vehicle , Average size of neigbourhood : 55.4296.
+	 *)In Image(8) , 500 Keypoints Were Detected , 127 Were On The Vehicle , Average size of neigbourhood : 54.6723.
+	 *)In Image(9) , 500 Keypoints Were Detected , 128 Were On The Vehicle , Average size of neigbourhood : 54.3886.
+For Detector "AKAZE" number of keypoints on vehicle detected :
+	 *)In Image(0) , 1351 Keypoints Were Detected , 166 Were On The Vehicle , Average size of neigbourhood : 7.72917.
+	 *)In Image(1) , 1327 Keypoints Were Detected , 157 Were On The Vehicle , Average size of neigbourhood : 7.4902.
+	 *)In Image(2) , 1311 Keypoints Were Detected , 161 Were On The Vehicle , Average size of neigbourhood : 7.45211.
+	 *)In Image(3) , 1351 Keypoints Were Detected , 155 Were On The Vehicle , Average size of neigbourhood : 7.57522.
+	 *)In Image(4) , 1360 Keypoints Were Detected , 163 Were On The Vehicle , Average size of neigbourhood : 7.73319.
+	 *)In Image(5) , 1347 Keypoints Were Detected , 164 Were On The Vehicle , Average size of neigbourhood : 7.68803.
+	 *)In Image(6) , 1363 Keypoints Were Detected , 173 Were On The Vehicle , Average size of neigbourhood : 7.73878.
+	 *)In Image(7) , 1331 Keypoints Were Detected , 175 Were On The Vehicle , Average size of neigbourhood : 7.82613.
+	 *)In Image(8) , 1358 Keypoints Were Detected , 177 Were On The Vehicle , Average size of neigbourhood : 7.81555.
+	 *)In Image(9) , 1331 Keypoints Were Detected , 179 Were On The Vehicle , Average size of neigbourhood : 7.88575.
+For Detector "SIFT" number of keypoints on vehicle detected :
+	 *)In Image(0) , 1438 Keypoints Were Detected , 138 Were On The Vehicle , Average size of neigbourhood : 4.98472.
+	 *)In Image(1) , 1371 Keypoints Were Detected , 132 Were On The Vehicle , Average size of neigbourhood : 5.08981.
+	 *)In Image(2) , 1380 Keypoints Were Detected , 124 Were On The Vehicle , Average size of neigbourhood : 4.93926.
+	 *)In Image(3) , 1335 Keypoints Were Detected , 137 Were On The Vehicle , Average size of neigbourhood : 4.73123.
+	 *)In Image(4) , 1305 Keypoints Were Detected , 134 Were On The Vehicle , Average size of neigbourhood : 4.71959.
+	 *)In Image(5) , 1369 Keypoints Were Detected , 140 Were On The Vehicle , Average size of neigbourhood : 4.68398.
+	 *)In Image(6) , 1396 Keypoints Were Detected , 137 Were On The Vehicle , Average size of neigbourhood : 5.40798.
+	 *)In Image(7) , 1382 Keypoints Were Detected , 148 Were On The Vehicle , Average size of neigbourhood : 4.62187.
+	 *)In Image(8) , 1463 Keypoints Were Detected , 159 Were On The Vehicle , Average size of neigbourhood : 5.51997.
+	 *)In Image(9) , 1422 Keypoints Were Detected , 137 Were On The Vehicle , Average size of neigbourhood : 5.62509.
